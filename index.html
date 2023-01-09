@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator-style.css">
+</head>
+
+<body>
+  <div class="conteiner">
+    <div class="item input">
+      <input type="text" id="inputout" name="viewresult" readonly value="0"></input>
+    </div>
+    <div class="item AC" onclick="cleanAll()">AC</div>
+    <div class="item" onclick="cleanOneSymbol()">&lArr;</div>
+    <div class="item sign" onclick="inputIn('/')">&divide;</div>
+    <div class="item" onclick="inputIn('7')">7</div>
+    <div class="item" onclick="inputIn('8')">8</div>
+    <div class="item" onclick="inputIn('9')">9</div>
+    <div class="item sign" onclick="inputIn('*')">&times;</div>
+    <div class="item" onclick="inputIn('4')">4</div>
+    <div class="item" onclick="inputIn('5')">5</div>
+    <div class="item" onclick="inputIn('6')">6</div>
+    <div class="item sign" onclick="inputIn('-')">-</div>
+    <div class="item" onclick="inputIn('1')">1</div>
+    <div class="item" onclick="inputIn('2')">2</div>
+    <div class="item" onclick="inputIn('3')">3</div>
+    <div class="item sign" onclick="inputIn('+')">+</div>
+    <div class="item AC" onclick="inputIn('0')">0</div>
+    <div class="item" onclick="inputIn('.')">.</div>
+    <div class="item sign" onclick="inputIn('=')">=</div>
+  </div>
+
+  <script src="calculator-js.js"></script>
+</body>
+
+</html>
